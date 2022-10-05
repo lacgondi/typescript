@@ -63,8 +63,8 @@ if(elem !== null){
 console.log(elem?.textContent);
 
 function szamol(){
-    let szam = document.getElementById('szam');
-    document.getElementById('kimenet')?.textContent = square(szam)
+    let szam = parseInt((document.getElementById('szam')as HTMLInputElement).value);
+    (document.getElementById('kimenet') as HTMLElement).textContent = square(szam).toString();
 }
 
 function init(){

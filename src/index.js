@@ -53,9 +53,8 @@ if (elem !== null) {
 }
 console.log(elem === null || elem === void 0 ? void 0 : elem.textContent);
 function szamol() {
-    var _a;
-    let szam = document.getElementById('szam');
-    (_a = document.getElementById('kimenet')) === null || _a === void 0 ? void 0 : _a.textContent = square(szam);
+    let szam = parseInt(document.getElementById('szam').value);
+    document.getElementById('kimenet').textContent = square(szam).toString();
 }
 function init() {
     var _a;
